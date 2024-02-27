@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Курсы</title>
+    <style>
+        .items {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+        .item {
+            background-color: #a3a35e;
+            padding: 15px;
+            color: black;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+<div class="items" id="items">
+</div>
+{% load static %}
+<script src="{% static 'frontend/index.js' %}"></script>
+</body>
+</html>
